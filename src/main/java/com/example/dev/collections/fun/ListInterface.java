@@ -33,7 +33,7 @@ public class ListInterface {
         System.out.println("Arrived in Vector " + vectorList);
 
         System.out.println("Teleporting to LinkedList and wiping out traces in Vector");
-        List<String> linkedList = new LinkedList<String>(vectorList);
+        List<String> linkedList = new LinkedList<>(vectorList);
         vectorList.clear();
 
         System.out.println("Crew is bonding together! Magic of LinkedList");
@@ -46,6 +46,8 @@ public class ListInterface {
             System.out.println(wordsIterator.next());
         }
 
+        // Get a range of elements between two indexes
+        System.out.println("Getting a range of elements between two indexes (1, 3): " + linkedList.subList(1, 3));
     }
 
 }
