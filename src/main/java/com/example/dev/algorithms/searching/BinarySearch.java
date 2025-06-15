@@ -9,7 +9,7 @@ public class BinarySearch {
 
         int[] numbers = {2, 3, 5, 9, 12, 17};
 
-        LOGGER.info("Result: " + binarySearch(numbers, 4));
+        log.info("Result: " + binarySearch(numbers, 4));
 
     }
 

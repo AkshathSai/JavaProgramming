@@ -18,13 +18,17 @@ public class ArrayDequeTest {
         deque.add("Element 2");
         deque.add("Element 1");
         deque.add("Element 3");
-        LOGGER.info("Deque after adding elements: {}", deque);
+        log.info("Deque after adding elements: {}", deque);
+        log.info(deque.getFirst());
+        log.info(deque.poll());
+        log.info(deque.getLast());
+        log.info(deque.peek());
         for (Iterator<String> it = deque.descendingIterator(); it.hasNext(); ) {
             String s = it.next();
-            LOGGER.info("Deque descending iterator: {}", s);
+            log.info("Deque descending iterator: {}", s);
         }
         for(String s: deque) {
-            LOGGER.info("Deque iterator: {}", s);
+            log.info("Deque iterator: {}", s);
         }
     }
 

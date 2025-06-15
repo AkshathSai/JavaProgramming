@@ -39,7 +39,7 @@ public class BubbleSort {
                 stringBuilder.append(", ");
             }
         }
-        LOGGER.info(stringBuilder.toString());
+        log.info(stringBuilder.toString());
     }
 
 }

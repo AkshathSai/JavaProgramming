@@ -15,6 +15,6 @@ public class UniqueCharactersSet {
 
         Set<Character> uniqueCharactersSet = new HashSet<>(characters);
 
-        LOGGER.info("Unique Characters Set: " + uniqueCharactersSet);
+        log.info("Unique Characters Set: " + uniqueCharactersSet);
     }
 }

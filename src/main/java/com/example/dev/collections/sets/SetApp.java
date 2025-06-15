@@ -24,7 +24,7 @@ public class SetApp {
         hashSet.add("Melon");
         hashSet.add("Citrus");
 
-        LOGGER.info("HashSet: " + hashSet);
+        log.info("HashSet: " + hashSet);
 
         /**
          * LinkedHashSet - maintains insertion order but doesn't care about sorted order
@@ -38,7 +38,7 @@ public class SetApp {
         linkedHashSet.add("Melon");
         linkedHashSet.add("Citrus");
 
-        LOGGER.info("LinkedHastSet: " + linkedHashSet);
+        log.info("LinkedHastSet: " + linkedHashSet);
 
         /**
          * TreeSet - maintains sorted order
@@ -52,6 +52,6 @@ public class SetApp {
         treeSet.add("Melon");
         treeSet.add("Citrus");
 
-        LOGGER.info("TreeSet: " + treeSet);
+        log.info("TreeSet: " + treeSet);
     }
 }

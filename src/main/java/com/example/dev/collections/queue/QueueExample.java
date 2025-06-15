@@ -30,10 +30,10 @@ public class QueueExample {
         queue.add("Monkey");
         queue.addAll(List.of("Zebra", "Tiger"));
 
-        LOGGER.info("{}", queue);
+        log.info("{}", queue);
 
         //Gets the element from the queue
-        LOGGER.info(queue.poll());
+        log.info(queue.poll());
 
     }
 }

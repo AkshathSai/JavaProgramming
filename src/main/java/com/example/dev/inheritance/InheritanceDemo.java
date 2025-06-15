@@ -13,12 +13,12 @@ public class InheritanceDemo {
         student.setCourse("BCA");*/
         student.setPhoneNumber("123456789");
 
-        LOGGER.info(student.toString());
+        log.info(student.toString());
 
         Employee employee = new Employee("Doraemon", "Parental Robot");
         /*Employee employee = new Employee();
         employee.setName("Doraemon");
         employee.setTitle("Parental Robot");*/
-        LOGGER.info(employee.toString());
+        log.info(employee.toString());
     }
 }
