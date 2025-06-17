@@ -2,8 +2,11 @@ package com.example.dev.datastructures.lists.singlylinkedlist;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.util.Iterator;
+import java.util.function.Consumer;
+
 @Slf4j
-public class MySinglyLinkedList<E> {
+public class MySinglyLinkedList<E> implements Iterable<E> {
 
     public Node<E> headNode;
     private int count = 0;
@@ -274,5 +277,35 @@ public class MySinglyLinkedList<E> {
     public int getCount() {
         return count;
     }
+
+    public Iterator<E> iterator() {
+        return new MyListIterator();
+    }
+
+    private class MyListIterator implements Iterator<E> {
+        private Node<E> current = headNode;
+
+        public boolean hasNext() {
+            return current != null;
+        }
+
+        @Override
+        public E next() {
+            E data = current.getData();
+            current = current.getNext();
+            return data;
+        }
+
+        @Override
+        public void remove() {
+            throw new UnsupportedOperationException();
+        }
+
+        @Override
+        public void forEachRemaining(Consumer<? super E> action) {
+            Iterator.super.forEachRemaining(action);
+        }
+    }
+
 
 }

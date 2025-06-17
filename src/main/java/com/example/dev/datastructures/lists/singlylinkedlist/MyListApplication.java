@@ -81,6 +81,14 @@ public class MyListApplication {
                     list.insertAt(index ,obj);
                     printMenu();
                     break;
+                case 12:
+                    // Use For Each
+                    System.out.println("Using my iterator to display elements in the list:");
+                    for (Object element : list) {
+                        System.out.println(element);
+                    }
+                    printMenu();
+                    break;
                 default:
                     System.out.println("Invalid Choice!\nPlease check the Menu Options & try again...");
                     printMenu();
@@ -92,7 +100,7 @@ public class MyListApplication {
 
     static void printMenu() {
         System.out.println("Menu");
-        System.out.println("1. Create an Empty LinkedList\n2. InsertFront\n3. InsertEnd\n4. DeleteFront\n5. DeleteEnd\n6. Search\n7. Display Elements\n8. Display Link Structure\n9. Exit\n10. Delete\n11. InsertAt");
+        System.out.println("1. Create an Empty LinkedList\n2. InsertFront\n3. InsertEnd\n4. DeleteFront\n5. DeleteEnd\n6. Search\n7. Display Elements\n8. Display Link Structure\n9. Exit\n10. Delete\n11. InsertAt\n12. Iterator");
     }
 
 }
