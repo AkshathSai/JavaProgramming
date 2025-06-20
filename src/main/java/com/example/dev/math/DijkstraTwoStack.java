@@ -5,8 +5,14 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Scanner;
 import java.util.Stack;
 
+/**
+ * Dijkstra's Two Stack Algorithm for evaluating expressions.
+ * This implementation uses two stacks: one for values and one for operations.
+ * It processes an infix expression and computes the result.
+ */
+
 @Slf4j
-public class DjikstrasTwoStack {
+public class DijkstraTwoStack {
 
     public static void main(String[] args) {
         Stack<Double> values = new Stack<>();
