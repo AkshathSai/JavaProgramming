@@ -33,7 +33,13 @@ public class Stack {
             throw new EmptyStackException();
         }
 
-        return array[top--] = null;
+        // This will cause loitering in Java
+        // return array[top--] = null;
+
+        Object valueToPop = array[top];
+        array[top] = null; // Clear the reference to avoid loitering
+        top--;
+        return valueToPop;
     }
 
     void printStack() {
