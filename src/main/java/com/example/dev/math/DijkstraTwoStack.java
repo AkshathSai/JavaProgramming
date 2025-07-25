@@ -66,7 +66,7 @@ public class DijkstraTwoStack {
 
         // Print the result
         if (!values.isEmpty()) {
-            log.info("Result: " + values.pop());
+            log.info("Result: {}", values.pop());
         } else {
             log.info("No result calculated");
         }
